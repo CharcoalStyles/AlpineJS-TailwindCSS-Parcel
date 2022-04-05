@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Alpine and Tailwind in Parcel</title>
+    <title>Alpine + Tailwind in Parcel</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="./index.css" rel="stylesheet">
     <script type="module" src="index.js"></script>
@@ -13,7 +13,7 @@
 <body>
     <div
         class="fixed top-0 left-0 w-screen h-16 text-center px-8 bg-gray-200 text-black py-2 flex flex-row justify-between items-baseline">
-        <h1 class="text-4xl text-orange-700 font-mono">Alpine + Tailwind</h1>
+        <h1 class="text-orange-700 font-mono">Alpine + Tailwind</h1>
         <div class="flex flex-row"
             x-data="{tech: [{name: 'AlpineJS', url: 'https://alpinejs.dev/'}, {name: 'TailwindCSS', url: 'https://tailwindcss.com/'}, {name: 'Parcel', url: 'https://parceljs.org/'}]}">
             <template x-for="t in tech" :key="t.name">
@@ -26,18 +26,11 @@
         </div>
     </div>
     <div class="container mx-auto pt-24 h-screen bg-gray-100">
-        <p class="text-xl">This is just a test</p>
-        <div x-data="{ count: 0, open: false }">
-            <button class="border-2 p-2 border-green-400" x-on:click="count++">Increment</button>
-
-            <button x-on:click="open = !open">Toggle Dropdown</button>
-
-            <div x-show="open">
-                <span x-text="count"></span>
-            </div>
-        </div>
+        <h2>Heading</h2>
+        <p>This is a paragraph of text. It's nothing too interesting, I just want to see what soem text looks like on
+            this page. And then depending on how it looks, I'm going to give it soem TailwindCSS classes to make it
+            looks better.</p>
     </div>
-
 </body>
 
 </html>
