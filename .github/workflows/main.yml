@@ -24,7 +24,7 @@ jobs:
       
       - name: build
         run: |
-          yarn,
+          yarn
           yarn build
       - name: GitHub Pages
         # You may pin to the exact commit or the version.
