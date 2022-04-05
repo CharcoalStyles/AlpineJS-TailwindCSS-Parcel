@@ -1,0 +1,14 @@
+{
+  "name": "alpine-tailwind",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "alpinejs": "^3.9.5",
+    "parcel": "^2.4.1",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23"
+  }
+}
